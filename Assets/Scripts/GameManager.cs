@@ -4,11 +4,42 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
 
-    private bool isBlueBoxIn = false;
-    private bool isGreenBoxIn = false;
-    private bool isRedBoxIn = false;
-    void Update()
+    public static GameManager Instance  { get; private set; }
+
+    public bool isBlueBoxIn = false;
+    public bool isGreenBoxIn = false;
+    public bool isRedBoxIn = false;
+
+    public int currentGameLevel = 1;
+
+    private void Awake()
     {
+        if (Instance == null)
+            Instance = this;
+        else
+            Destroy(gameObject);
+    }
+
+    private void toLevel2()
+    {
+
+        if(currentGameLevel == 1)
+        {
+            
+            if(isBlueBoxIn && isGreenBoxIn && isRedBoxIn)
+            {
+                SceneManager.LoadScene("Level2");
+            }
+
+        }
         
     }
+
+    void Update()
+    {
+
+        toLevel2();
+
+    }
+    
 }
