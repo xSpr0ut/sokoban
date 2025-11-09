@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
     }
 
-    private void toLevel2()
+    private void ChangeLevel()
     {
 
         if(currentGameLevel == 1)
@@ -29,6 +29,10 @@ public class GameManager : MonoBehaviour
             if(isBlueBoxIn && isGreenBoxIn && isRedBoxIn)
             {
                 SceneManager.LoadScene("Level2");
+
+                isBlueBoxIn = false;
+                isGreenBoxIn = false;
+                isRedBoxIn = false;
             }
 
         }
@@ -38,7 +42,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
 
-        toLevel2();
+        ChangeLevel();
 
     }
     
