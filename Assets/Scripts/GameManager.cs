@@ -23,19 +23,44 @@ public class GameManager : MonoBehaviour
     private void ChangeLevel()
     {
 
-        if(currentGameLevel == 1)
-        {
+        switch(currentGameLevel){
+
+            case 1:
             
-            if(isBlueBoxIn && isGreenBoxIn && isRedBoxIn)
-            {
-                SceneManager.LoadScene("Level2");
+                if (isBlueBoxIn && isGreenBoxIn && isRedBoxIn)
+                {
 
-                isBlueBoxIn = false;
-                isGreenBoxIn = false;
-                isRedBoxIn = false;
-            }
+                    currentGameLevel++;
 
-        }
+                    isBlueBoxIn = false;
+                    isGreenBoxIn = false;
+                    isRedBoxIn = false;
+
+                    SceneManager.LoadScene("Level2");
+                }
+
+                break;
+
+            case 2:
+
+                if (isBlueBoxIn && isGreenBoxIn && isRedBoxIn)
+                {
+
+                    currentGameLevel++;
+
+                    isBlueBoxIn = false;
+                    isGreenBoxIn = false;
+                    isRedBoxIn = false;
+
+                    SceneManager.LoadScene("Level3");
+                }
+
+                break;
+            
+
+        
+
+    }
         
     }
 
