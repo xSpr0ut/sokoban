@@ -69,6 +69,13 @@ public class GameManager : MonoBehaviour
 
         ChangeLevel();
 
+        // for scene restart !!!
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+
     }
     
 }
