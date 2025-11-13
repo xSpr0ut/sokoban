@@ -20,6 +20,13 @@ public class BluePadScript : MonoBehaviour
 
     }
 
+
+    void OnTriggerExit(Collider other)
+    {
+        GameManager.Instance.isBlueBoxIn = false;
+    }
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

@@ -20,7 +20,13 @@ public class GreenPadScript : MonoBehaviour
 
 
     }
-    
+
+    void OnTriggerExit(Collider other)
+    {
+        GameManager.Instance.isGreenBoxIn = false;
+        Debug.Log("GREEN BOX IS FALSE!");
+    }
+
     void Start()
     {
         

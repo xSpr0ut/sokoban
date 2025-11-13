@@ -21,6 +21,12 @@ public class redPadScript : MonoBehaviour
 
 
     }
+
+    void OnTriggerExit(Collider other)
+    {
+        GameManager.Instance.isRedBoxIn = false;
+    }
+
     
  void Start()
     {
