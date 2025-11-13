@@ -2732,6 +2732,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2576688803918913351, guid: 75fffa8d9bfeecb4ab342acea4f03c14, type: 3}
+      propertyPath: m_Size.x
+      value: 0.7010728
+      objectReference: {fileID: 0}
+    - target: {fileID: 2576688803918913351, guid: 75fffa8d9bfeecb4ab342acea4f03c14, type: 3}
+      propertyPath: m_Size.z
+      value: 0.78150654
+      objectReference: {fileID: 0}
+    - target: {fileID: 2576688803918913351, guid: 75fffa8d9bfeecb4ab342acea4f03c14, type: 3}
+      propertyPath: m_Center.x
+      value: 0.018281281
+      objectReference: {fileID: 0}
+    - target: {fileID: 2576688803918913351, guid: 75fffa8d9bfeecb4ab342acea4f03c14, type: 3}
+      propertyPath: m_Center.z
+      value: 0.10924673
+      objectReference: {fileID: 0}
     - target: {fileID: 7017632479641273981, guid: 75fffa8d9bfeecb4ab342acea4f03c14, type: 3}
       propertyPath: m_Name
       value: BluePad
@@ -3006,6 +3022,22 @@ PrefabInstance:
     - target: {fileID: 1059832267574532035, guid: fec19acc0ac2a0346bc622a0c37ccf65, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7255258739835223517, guid: fec19acc0ac2a0346bc622a0c37ccf65, type: 3}
+      propertyPath: m_Size.x
+      value: 0.8319347
+      objectReference: {fileID: 0}
+    - target: {fileID: 7255258739835223517, guid: fec19acc0ac2a0346bc622a0c37ccf65, type: 3}
+      propertyPath: m_Size.z
+      value: 0.8410082
+      objectReference: {fileID: 0}
+    - target: {fileID: 7255258739835223517, guid: fec19acc0ac2a0346bc622a0c37ccf65, type: 3}
+      propertyPath: m_Center.x
+      value: -0.08403264
+      objectReference: {fileID: 0}
+    - target: {fileID: 7255258739835223517, guid: fec19acc0ac2a0346bc622a0c37ccf65, type: 3}
+      propertyPath: m_Center.z
+      value: -0.07949591
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

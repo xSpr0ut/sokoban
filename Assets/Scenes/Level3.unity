@@ -4797,6 +4797,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: RedPad
       objectReference: {fileID: 0}
+    - target: {fileID: 959804341670676474, guid: 076699a8210457741bdb9be2e5c6e8d5, type: 3}
+      propertyPath: m_Size.x
+      value: 0.7696576
+      objectReference: {fileID: 0}
+    - target: {fileID: 959804341670676474, guid: 076699a8210457741bdb9be2e5c6e8d5, type: 3}
+      propertyPath: m_Size.z
+      value: 0.7339711
+      objectReference: {fileID: 0}
+    - target: {fileID: 959804341670676474, guid: 076699a8210457741bdb9be2e5c6e8d5, type: 3}
+      propertyPath: m_Center.x
+      value: 0.115171194
+      objectReference: {fileID: 0}
+    - target: {fileID: 959804341670676474, guid: 076699a8210457741bdb9be2e5c6e8d5, type: 3}
+      propertyPath: m_Center.z
+      value: 0.13301444
+      objectReference: {fileID: 0}
     - target: {fileID: 7273148420734939115, guid: 076699a8210457741bdb9be2e5c6e8d5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4
