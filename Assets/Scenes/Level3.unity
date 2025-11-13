@@ -1212,7 +1212,7 @@ MonoBehaviour:
   isBlueBoxIn: 0
   isGreenBoxIn: 0
   isRedBoxIn: 0
-  currentGameLevel: 2
+  currentGameLevel: 3
 --- !u!1001 &485364259
 PrefabInstance:
   m_ObjectHideFlags: 0

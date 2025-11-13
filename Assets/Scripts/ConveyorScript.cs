@@ -8,14 +8,11 @@ public class ConveyorScript : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        Debug.Log("block detected");
 
         if (other.gameObject.name.Contains("Smooth") ||
         other.gameObject.name.Contains("Slide") ||
         other.gameObject.name.Contains("Stick"))
         {
-
-            Debug.Log("TAG WORKING?");
             other.transform.position += moveDirection.normalized * speed * Time.deltaTime;
         }
     }

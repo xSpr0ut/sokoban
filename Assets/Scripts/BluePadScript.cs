@@ -3,6 +3,9 @@ using UnityEngine;
 public class BluePadScript : MonoBehaviour
 {
 
+    [SerializeField] private AudioClip inSound;
+    private AudioSource audioSource;
+
     void OnTriggerEnter(Collider collision)
     {
 
@@ -10,6 +13,7 @@ public class BluePadScript : MonoBehaviour
         {
             GameManager.Instance.isBlueBoxIn = true;
             Debug.Log("BLUE BOX IS TRUE!");
+            audioSource.PlayOneShot(inSound);
 
         }
 
@@ -20,6 +24,9 @@ public class BluePadScript : MonoBehaviour
     void Start()
     {
         
+        audioSource = GetComponent<AudioSource>();
+        audioSource.playOnAwake = false;
+
     }
 
     // Update is called once per frame

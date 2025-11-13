@@ -56,6 +56,29 @@ public class GameManager : MonoBehaviour
                 }
 
                 break;
+
+
+            case 3:
+
+                Debug.Log("Case 3 running");
+
+                if (isBlueBoxIn && isGreenBoxIn && isRedBoxIn)
+                {
+
+                    Debug.Log("Case 3 true");
+
+                    currentGameLevel++;
+
+                    isBlueBoxIn = false;
+                    isGreenBoxIn = false;
+                    isRedBoxIn = false;
+
+                    SceneManager.LoadScene("End");
+                }
+                
+                Debug.Log("Case 3 false");
+
+                break;
             
 
         
